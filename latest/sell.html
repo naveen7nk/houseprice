@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sell Your House</title>
+</head>
+<body>
+    <header>
+        <h1>Sell Your House</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="buy.html">Buy</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="price-form">
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="number" id="bedrooms" required>
+
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="number" id="bathrooms" required>
+
+            <label for="balcony">Balcony:</label>
+            <input type="number" id="balcony">
+
+            <label for="windows">Windows:</label>
+            <input type="number" id="windows" required>
+
+            <label for="area">Area (sq ft):</label>
+            <input type="number" id="area" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+
+            <label for="image">Upload House Image:</label>
+            <input type="file" id="image" accept="image/*">
+
+            <label for="parking">Car Parking Available:</label>
+            <select id="parking">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Predict Price</button>
+            <button type="submit">register for sale</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Predicted Price:  ₹<span id="predicted-price"></span></h2>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 House Price Prediction</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
